@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SWIPER CSS -->
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+
+    <!-- BOX ICONS -->
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <!-- AJAX LIBRARY -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+
+    <title>Personal Portfolio Website</title>
+
+    <link rel = "icon" href ="assets/img/alphabet-k.svg" type = "image/x-icon">
+</head>
+<body>
+    <!-- scroll top -->
+    <a href="#" class="scrolltop" id="scroll-top">
+        <i class='bx bx-chevron-up scrolltop__icon' ></i>
+    </a>
+
+    <!-- header -->
+    <header class="l-header" id="header">
+        <nav class="nav bd-container">
+            <a href="#" class="nav__logo">Krishnaprasad E K</a>
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="#home" class="nav__link active-link">Home</a></li>
+                    <li class="nav__item"><a href="#about" class="nav__link ">About</a></li>
+                    <li class="nav__item"><a href="#education" class="nav__link ">Education</a></li>
+                    <li class="nav__item"><a href="#project" class="nav__link ">Project</a></li>
+                    <li class="nav__item"><a href="#skills" class="nav__link ">Skills</a></li>
+                    <li class="nav__item"><a href="#interests" class="nav__link ">Interests</a></li>
+                    <li class="nav__item"><a href="#contact" class="nav__link ">Contact Me</a></li>
+                </ul>
+            </div>
+
+            <div class="nav__toggle" id="nav-toggle">
+                <i class='bx bx-menu'></i>
+            </div>
+        </nav>
+    </header>
+
+    <main class="l-main">
+        <!-- HOME -->
+        <section class="home" id="home">
+            <div class="home__container bd-container bd-grid">
+                <div class="home__data">
+                    <span class="home__greeting">Hello, My name is</span>
+                    <h2 class="home__name" data-text="Krishnaprasad E K" >Krishnaprasad E K</h2>
+                    <span class="home__profession">Web Developer</span>
+                    <a download="" href="assets\pdf\KRISHNAPRASAD-EK-CV.pdf" class="button button-light home__button">Download CV</a>
+                </div>
+
+                <div class="home__social">
+                    <a href="#" class="home__social-icon"><i class='bx bxl-facebook-square'></i></a>
+                    <a href="#" class="home__social-icon"><i class='bx bxl-instagram' ></i></a>
+                    <a href="#" class="home__social-icon"><i class='bx bxl-twitter' ></i></a>
+
+                </div>
+
+                <div class="home__img">
+                    <img src="assets\img\2826604.jpg" alt="">
+                </div>
+            </div>
+        </section>
+
+        <!-- ABOUT -->
+        <section class="about section bd-container" id="about">
+            <span class="section-subtitle">My history</span>
+            <h2 class="section-title">About me</h2>
+
+            <div class="about__container bd-grid">
+                <div class="about__data bd-grid">
+                    <p class="about__description"><span>Hello, I am <br></span> a B.Tech graduate in Computer Science and Engineering, I am passionate about creating and developing web interfaces, graphic designing, computer programming and cyber forensics. Looking for a great opportunity where I can fully utilize my skills and gain further experience while enhancing the company's productivity and reputation.</p>
+
+                    <!-- <div>
+                        <span class="about__number">05</span>
+                        <span class="about__achievement">Years of experience</span>
+                    </div>
+
+                    <div>
+                        <span class="about__number">29+</span>
+                        <span class="about__achievement">Projects completes</span>
+                    </div>
+
+                    <div>
+                        <span class="about__number">07</span>
+                        <span class="about__achievement">Best work awards</span>
+                    </div> -->
+                
+
+                
+            </div>
+            <img src="assets/img/about.jpg" alt="" class="about__img">
+        </section>
+
+        <!-- QUALIFICATION -->
+        <section class="qualification bd-container" id="education">
+            <span class="section-subtitle">Education</span>
+            <h2 class="section-title">Qualification</h2>
+
+            <div class="qualification__container bd-grid">
+                <!-- <div class="qualification__content">
+                    <h2 class="qualification__title">
+                        <i class='bx bx-briefcase-alt qualification__title-icon'></i> 
+                        Work Experience
+                    </h2>
+
+                    <div class="bd-grid">
+                        <div class="qualification__data">
+                            <h3 class="qualification__area">Junior Front End Developer</h3>
+
+                            <div class="qualification__box">
+                                <span class="qualification__work">
+                                    <i class='bx bx-briefcase-alt qualification__icon'></i>
+                                    Adobe - New york
+                                </span>
+
+                                <span class="qualification__work">
+                                    <i class='bx bx-calendar-alt qualification__icon'></i>
+                                    Jan 2019 - Aug 2019
+                                </span>
+                            </div>
+                        </div>
+
+                        <div class="qualification__data">
+                            <h3 class="qualification__area">UI / UX Designer</h3>
+
+                            <div class="qualification__box">
+                                <span class="qualification__work">
+                                    <i class='bx bx-briefcase-alt qualification__icon'></i>
+                                    Figma - Lima
+                                </span>
+
+                                <span class="qualification__work">
+                                    <i class='bx bx-calendar-alt qualification__icon'></i>
+                                    Oct 2019 - Dec 2019
+                                </span>
+                            </div>
+                        </div>
+
+                        <div class="qualification__data">
+                            <h3 class="qualification__area">Web Designer</h3>
+
+                            <div class="qualification__box">
+                                <span class="qualification__work">
+                                    <i class='bx bx-briefcase-alt qualification__icon'></i>
+                                    Apple Inc - New York
+                                </span>
+
+                                <span class="qualification__work">
+                                    <i class='bx bx-calendar qualification__icon'></i>
+                                    Jan 2019 - May 2020
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div> -->
+
+                <div class="qualification__content">
+                    <h2 class="qualification__title">
+                        <i class='bx bx-book-bookmark qualification__title-icon'></i> 
+                        Education
+                    </h2>
+
+                    <div class="bd-grid">
+                        <div class="qualification__data">
+                            <h3 class="qualification__area">Bachelor of Technology in Computer Science and Engineering</h3>
+
+                            <div class="qualification__box">
+                                <span class="qualification__work">
+                                    <i class='bx bx-book-alt qualification__icon'></i>
+                                    Kerala Technological University - India
+                                </span>
+
+                                <span class="qualification__work">
+                                    <i class='bx bx-calendar-alt qualification__icon'></i>
+                                    July 2016 - sep 2020
+                                </span>
+                            </div>
+                        </div>
+
+                        <div class="qualification__data">
+                            <h3 class="qualification__area">PLUS TWO</h3>
+
+                            <div class="qualification__box">
+                                <span class="qualification__work">
+                                    <i class='bx bx-book-alt qualification__icon'></i>
+                                    St Peter's HSS Kolenchery, Ernakulam
+                                </span>
+
+                                <span class="qualification__work">
+                                    <i class='bx bx-calendar-alt qualification__icon'></i>
+                                    June 2014 - April 2016
+                                </span>
+                            </div>
+                        </div>
+
+                        <div class="qualification__data">
+                            <h3 class="qualification__area">SSLC</h3>
+
+                            <div class="qualification__box">
+                                <span class="qualification__work">
+                                    <i class='bx bx-book-alt qualification__icon'></i>
+                                    GHSS Kadayiruppu, Ernakulam
+                                </span>
+
+                                <span class="qualification__work">
+                                    <i class='bx bx-calendar-alt qualification__icon'></i>
+                                    June 2013 - April 2014
+                                </span>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PROJECTS -->
+        <section class="services section bd-container" id="project">
+            <span class="section-subtitle">final year college</span>
+            <h2 class="section-title">Project</h2>
+
+            <div class="services__container">
+                <div class="services__data">
+                    <i class='bx bx-mobile services__icon'></i>
+                    <h3 class="services__title">APPLICATION FOR ONLINE TO OFFLINE SERVICES</h3>
+                    <p class="services__description">A utility android app is designed to service customers on their move to provide locality based 
+                        services with more user friendly interfaces.<span id="dots">...</span><span id="more"> The app offers immediate solutions to mechanic 
+                            service, food service, medical service, electric and electronic services and many other services 
+                            which is vital in present world as we mainly dependent on tertiary sector. When the user is in 
+                            need of a service, the app furnishes a list of nearby service providers from which the user can 
+                            select. Address of service provider are also made available to the user with the help of this app
+                            along with review ratings.<br> The choosen provider is automatically intimated for his or her service 
+                            requirement and the customer is given necessary assistance. This app benefits small shops by 
+                            giving recognition which eventually increases the availability of jobs and the number of good
+                            entrepreneurs for the growth of our country. The customer can also provide ratings to the 
+                            servicer, which in return ensures the originality of the service provider.
+                            </span></p>
+                    <a onclick="myFunction()" id="myBtn" class="button">Read more</a>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- SKILLS -->
+        <section class="contact section bd-container" id="skills">
+            <h2 class="section-title">Skills</h2>
+
+            <div class="contact__container bd-grid">
+                <div class="skills__content bd-grid">
+                    <div class="skills__box">
+                        <img class="skills"src="assets/img/java.png.png" alt="">
+                        <h3 class="contact__title">Java</h3>
+                    </div>
+
+                    <div class="skills__box">
+                        <img class="skills" src="assets/img/Clang.png.png" alt="">
+                        <h3 class="contact__title">C</h3>
+                    </div>
+
+                    <div class="skills__box">
+                        <img class="skills" src="assets/img/Python.png.png" alt="">
+                        <h3 class="contact__title">Python</h3>
+                    </div>
+
+                    <div class="skills__box">
+                        <img class="skills" src="assets/img/php.png.png" alt="">
+                        <h3 class="contact__title">Php</h3>
+                    </div>
+
+                    <div class="skills__box">
+                        <img class="skills" src="assets/img/html.png.png" alt="">
+                        <h3 class="contact__title">Html</h3>
+                    </div>
+
+                    <div class="skills__box">
+                        <div>
+                            <img class="skills" src="assets/img/css.png" alt="">
+                        </div>
+                        <h3 class="contact__title">Css</h3>    
+                    </div>
+
+                    <div class="skills__box">
+                        <img class="skills" src="assets/img/Javascript.png.png" alt="">
+                        <h3 class="contact__title">Javascript</h3>
+                    </div>
+
+                    <div class="skills__box">
+                        <img class="skills" src="assets/img/Adobe_After_Effects_CS6_Icon.png" alt="">
+                        <h3 class="contact__title" style="width: 124px;;">After effects</h3>
+                    </div>
+                </div>
+            </div>    
+        </section>
+
+        <!-- INTERESTS -->
+        <section class="qualification bd-container" id="interests" >
+            <span class="section-subtitle"></span>
+            <h2 class="section-title">Interests</h2>
+
+            <div class="portfolio__container bd-grid">
+                <span class="contact__box">
+                    <i class='bx bx-code-block qualification__title-icon'></i>
+                    Programming
+                </span>
+
+                <span class="contact__box">
+                    <i class='bx bxs-joystick qualification__title-icon'></i>
+                    Video games
+                </span>
+
+                <span class="contact__box">
+                    <i class='bx bx-paint qualification__title-icon'></i>
+                    Graphic designing
+                </span>
+
+                <span class="contact__box">
+                    <i class='bx bx-fingerprint qualification__title-icon'></i>
+                    Cyber forensics
+                </span>
+
+                <span class="contact__box">
+                    <i class='bx bx-camera-movie qualification__title-icon'></i>
+                    Movies
+                </span>
+
+                <span class="contact__box">
+                    <i class='bx bxs-edit qualification__title-icon'></i>
+                    Color Grading
+                </span>
+
+                <span class="contact__box">
+                    <i class='bx bxs-book-reader qualification__title-icon'></i>
+                    Reading
+                </span>
+
+                <span class="contact__box">
+                    <i class='bx bxs-music qualification__title-icon'></i>
+                    Music
+                </span>
+            </div>
+        </section>
+
+        <!-- PROJECT IN MIND -->
+        <section class="project section bd-container">
+            <div class="project__container bd-grid">
+                <div class="project__data">
+                    <i class='bx bx-chat project-icon' ></i>
+
+                    <div>
+                        <h2 class="project__title">Project in mind</h2>
+                        <p class="project__description">Hire me to carry out following projects.</p>
+                    </div>
+
+                    <div>
+                        <a href="tel:+918921920749" class="button button-white">Hire Me</a>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- PORTFOLIO -->
+        <!-- <section class="portfolio section bd-container" id="portfolio">
+            <span class="section-subtitle">My recent works</span>
+            <h2 class="section-title">Portfolio</h2>
+
+            <div class="portfolio__nav">
+                <span class="portfolio__item active-portfolio" data-filter="all">All</span>
+                <span class="portfolio__item" data-filter=".web">Web</span>
+                <span class="portfolio__item" data-filter=".ux">UI/UX</span>
+                <span class="portfolio__item" data-filter=".app">App</span>
+            </div>
+
+            <div class="portfolio__container bd-grid">
+                <div class="portfolio__content mix web">
+                    <a href="#"><img src="assets/img/work1.jpg" alt="" class="portfolio__img"></a>
+                    <div class="portfolio__data">
+                        <span class="portfolio__subtitle">Web Development</span>
+                        <a href="#"><h2 class="portfolio__title">New portfolio of work done for a client.</h2></a>
+                        <a href="#" class="button button-link">View Detiles</a>
+                    </div>
+                </div>
+
+                <div class="portfolio__content mix web">
+                    <a href="#"><img src="assets/img/work2.jpg" alt="" class="portfolio__img"></a>
+                    <div class="portfolio__data">
+                        <span class="portfolio__subtitle">Web Development</span>
+                        <a href="#"><h2 class="portfolio__title">New portfolio of work done for a client.</h2></a>
+                        <a href="#" class="button button-link">View Detiles</a>
+                    </div>
+                </div>
+
+                <div class="portfolio__content mix ux">
+                    <a href="#"><img src="assets/img/work3.jpg" alt="" class="portfolio__img"></a>
+                    <div class="portfolio__data">
+                        <span class="portfolio__subtitle">Ux Design</span>
+                        <a href="#"><h2 class="portfolio__title">New portfolio of work done for a client.</h2></a>
+                        <a href="#" class="button button-link">View Detiles</a>
+                    </div>
+                </div>
+
+                <div class="portfolio__content mix ux">
+                    <a href="#"><img src="assets/img/work4.jpg" alt="" class="portfolio__img"></a>
+                    <div class="portfolio__data">
+                        <span class="portfolio__subtitle">Ux Design</span>
+                        <a href="#"><h2 class="portfolio__title">New portfolio of work done for a client.</h2></a>
+                        <a href="#" class="button button-link">View Detiles</a>
+                    </div>
+                </div>
+
+                <div class="portfolio__content mix app">
+                    <a href="#"><img src="assets/img/work5.jpg" alt="" class="portfolio__img"></a>
+                    <div class="portfolio__data">
+                        <span class="portfolio__subtitle">Mobile app</span>
+                        <a href="#"><h2 class="portfolio__title">New portfolio of work done for a client.</h2></a>
+                        <a href="#" class="button button-link">View Detiles</a>
+                    </div>
+                </div>
+
+                <div class="portfolio__content mix app">
+                    <a href="#"><img src="assets/img/work6.jpg" alt="" class="portfolio__img"></a>
+                    <div class="portfolio__data">
+                        <span class="portfolio__subtitle">Mobile app</span>
+                        <a href="#"><h2 class="portfolio__title">New portfolio of work done for a client.</h2></a>
+                        <a href="#" class="button button-link">View Detiles</a>
+                    </div>
+                </div>
+            </div>
+
+            
+        </section> -->
+
+        <!-- TESTIMONIAL -->
+        <!-- <section class="testimonial section bd-container">
+            <span class="section-subtitle">My client saying</span>
+            <h2 class="section-title">Testimonial</h2>
+
+            <div class="testimonial__container swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="testimonial__content swiper-slide">
+                        <img src="assets/img/testimonial1.jpg" alt="" class="testimonial__img">
+                        <h3 class="testimonial__title">Joe Rone</h3>
+                        <span class="testimonial__client">Client</span>
+                        <p class="testimonial__description">This company does a very good service, offers the best deals and does a good job, I recommand it.</p>
+                    </div>
+
+                    <div class="testimonial__content swiper-slide">
+                        <img src="assets/img/testimonial2.jpg" alt="" class="testimonial__img">
+                        <h3 class="testimonial__title">Sara Mill</h3>
+                        <span class="testimonial__client">Client</span>
+                        <p class="testimonial__description">This company does a very good service, offers the best deals and does a good job, I recommand it.</p>
+                    </div>
+
+                    <div class="testimonial__content swiper-slide">
+                        <img src="assets/img/testimonial3.jpg" alt="" class="testimonial__img">
+                        <h3 class="testimonial__title">Clay Mitchell</h3>
+                        <span class="testimonial__client">Client</span>
+                        <p class="testimonial__description">This company does a very good service, offers the best deals and does a good job, I recommand it.</p>
+                    </div>
+
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+
+        </section> -->
+
+
+        <!-- CONTACTME -->
+        <section class="contact section bd-container" id="contact">
+            <span class="section-subtitle">For projects</span>
+            <h2 class="section-title">Contact Me</h2>
+
+            <div class="contact__container bd-grid">
+                <div class="contact__content bd-grid">
+                    <div class="contact__box">
+                        <i class='bx bx-home contact__icon' ></i>
+                        <h3 class="contact__title">Location</h3>
+                        <span class="contact__description">Kochi -Kerala -India</span>
+                    </div>
+
+                    <div class="contact__box">
+                        <i class='bx bx-phone contact__icon' ></i>
+                        <h3 class="contact__title">Phone</h3>
+                        <a class="contact__description" href="tel:+918921920749">892-192-0749</a>
+                    </div>
+
+                    <div class="contact__box">
+                        <i class='bx bx-envelope contact__icon' ></i>
+                        <h3 class="contact__title">Gmail</h3>
+                        <a class="contact__description" href="mailto:krish380013@gmail.com" >krish380013@gmail.com</a>
+                    </div>
+
+                    <div class="contact__box">
+                        <i class='bx bx-chat contact__icon' ></i>
+                        <h3 class="contact__title">Chat</h3>
+                        <div>
+                            <a href="https://wa.me/+919847040883" class="contact__social_wa"><i class='bx bxl-whatsapp-square' ></i></a>
+                            <a href="https://www.facebook.com/krishnaprasad.ek.5/?viewas=100000686899395" class="contact__social_fb"><i class='bx bxl-facebook-circle'></i></a>
+                            <a href="https://www.instagram.com/mr_k_0038/" class="contact__social_inst"><i class='bx bxl-instagram-alt' ></i></a>
+                        </div>
+
+                    </div>
+                </div>
+
+                <form id="submit-form" action="" class="contact__form">
+                    <div class="contact__inputs">
+                        <input type="text" name="name" placeholder="Name" class="contact__input" required>
+                        <input type="email" name="email" placeholder="Email" class="contact__input" required>
+                    </div>
+
+                    <div class="contact__inputs">
+                        <input type="text" name="place" placeholder="Place" class="contact__input" required>
+                        <input type="number" name="number" placeholder="Phone number" class="contact__input" required>
+                    </div>
+
+                    <textarea name="message" id="" cols="0" rows="7" placeholder="write your message..." class="contact__input" required></textarea>
+
+                    <input type="submit" value="Send Message" class="button contact__button">
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer__container bd-container">
+            <h1 class="footer__title">Krishnaprasad E K</h1>
+            <p class="footer__description">I am Krishnaprasad and this is my personel website, consult me here.</p>
+            <div class="footer__social">
+                <a href="https://www.linkedin.com/in/krishnaprasad-e-k-6322831bb" class="footer__link"><i class='bx bxl-linkedin' ></i></a>
+                <a href="#" class="footer__link"><i class='bx bxl-github' ></i></a>
+                <a href="#" class="footer__link"><i class='bx bxl-dribbble' ></i></a>
+            </div>
+            <p class="footer__copy">&#169; 2020 Krishnaprasad. All rights reserved</p>
+        </div>
+    </footer>
+
+    <!-- MIXIT UP FILTER -->
+    <script src="assets/js/mixitup.min.js"></script>
+
+    <!-- SWIPER JS -->
+    <script src="assets/js/swiper-bundle.min.js"></script>
+
+    <!-- GSAP -->
+    <script src="assets/js/gsap.min.js"></script>
+
+    <!-- MAIN JS -->
+    <script src="assets/js/main.js"></script>
+
+    <!-- FORM SUBMIT ALERT -->
+    <script>
+        $("#submit-form").submit((e)=>{
+            e.preventDefault()
+            $.ajax({
+                url:"https://script.google.com/macros/s/AKfycbzrzqUx9R_xzTy6VHVcvjOBb5RjJQRtl_1y7lbhgQ/exec",
+                data:$("#submit-form").serialize(),
+                method:"post",
+                success:function (response){
+                    alert("Form submitted successfully")
+                    window.location.reload()
+                    //window.location.href="https://google.com"
+                },
+                error:function (err){
+                    alert("Something Error")
+    
+                }
+            })
+        })
+    </script>
+    
+</body>
+</html>
